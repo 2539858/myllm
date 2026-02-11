@@ -5,7 +5,7 @@
 2. 数据下载
 将数据下载到 dataset文件夹下
 pip install modelscope # 安装魔塔
-modelscope download --dataset gongjy/minimind_dataset --include pretrain_hq.jsonl --local_dir ./dataset # 把pretrain_hq.jsonl装到dataset
+modelscope download --dataset gongjy/minimind_dataset pretrain_hq.jsonl --local_dir ./dataset # 把pretrain_hq.jsonl装到dataset
 数据集下载链接：https://www.modelscope.cn/datasets/gongjy/minimind_dataset/files
 可以根据自己需求下载不同大小的数据
 
