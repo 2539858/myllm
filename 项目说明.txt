@@ -1,0 +1,17 @@
+1. 环境安装：
+# 输入下面这个指令，安装环境
+# pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
+
+2. 数据下载
+将数据下载到 dataset文件夹下
+pip install modelscope # 安装魔塔
+modelscope download --dataset gongjy/minimind_dataset --include pretrain_hq.jsonl --local_dir ./dataset # 把pretrain_hq.jsonl装到dataset
+数据集下载链接：https://www.modelscope.cn/datasets/gongjy/minimind_dataset/files
+可以根据自己需求下载不同大小的数据
+
+3.model：存模型文件、trainer：训练部分、picture：每个模块的图片和公式解释、
+out：输出权重放置的位置、dataset：存储数据集
+
+4.训练、测试指令
+训练：python train_pretrain.py
+测试：python eval_llm.py --weight pretrain

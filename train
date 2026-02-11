@@ -1,0 +1,8 @@
+dataset: https://www.modelscope.cn/datasets/gongjy/minimind_dataset/files   pretrain_hq.jsonl
+安装魔塔：pip install modelscope
+切换到dataset文件夹：cd dataset
+输入：modelscope download --dataset gongjy/minimind_dataset --include pretrain_hq.jsonl --local_dir ./dataset
+
+训练：python train_pretrain.py
+
+测试：python eval_llm.py --weight pretrain
